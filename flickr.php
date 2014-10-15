@@ -7,7 +7,7 @@ mysql_select_db('flickr') or die ('Failed to select DB');
 class flickr
 {
 	private $searchAPI = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=<API_KEY>&text=<TEXT>&privacy_filter=1&safe_search=1&content_type=1&is_getty=true&page=<PAGE>&per_page=20&format=json&nojsoncallback=1';
-	private $photoAPI = 'http://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=<API_KEY>&photo_id=<PHOTO_ID>&format=json&nojsoncallback=1';
+	private $photoAPI = 'https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=<API_KEY>&photo_id=<PHOTO_ID>&format=json&nojsoncallback=1';
 	private $photoURL = 'https://farm<FARM_NUM>.staticflickr.com/<SERVER>/<PHOTO_ID>_<SECRET_NUM>_z.jpg';
 	private $photoIds = array();
 	private $apiKey = '3153103a56ffc62e63b3eee4ae85943f';
