@@ -131,7 +131,7 @@
 					return;
 				}
 				e.halt();
-				xhrUrl = '/samples/flickr/flickr.php?text='+Y.one('#searchText').get('value');
+				xhrUrl = '/flickr/flickr.php?text='+Y.one('#searchText').get('value');
 				colorInfo = Y.all('.searchQuery.colors.selectedColor');
 				colorMsg = '';
 				if (colorInfo.size() > 0) {
