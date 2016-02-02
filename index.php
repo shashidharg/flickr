@@ -21,7 +21,7 @@
 			text-decoration: none;
 			cursor: pointer;
 		}
-		.searchQuery.colors { width:50px; border: 1px solid #FFFFFF;text-align: center;}
+		.searchQuery.colors { width:40px; border: 1px solid #FFFFFF;text-align: center;}
 		.searchQuery.red { background-color: #CC0000; }
 		.searchQuery.orange { background-color: #FB940B; }
 		.searchQuery.yellow { background-color: #FFFF00; color:#000000; }
@@ -131,7 +131,7 @@
 					return;
 				}
 				e.halt();
-				xhrUrl = '/flickr/flickr.php?text='+Y.one('#searchText').get('value');
+				xhrUrl = '/flickr.php?text='+Y.one('#searchText').get('value');
 				colorInfo = Y.all('.searchQuery.colors.selectedColor');
 				colorMsg = '';
 				if (colorInfo.size() > 0) {
