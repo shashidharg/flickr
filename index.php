@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Color Flickr</title>
-	<link href="http://yui.yahooapis.com/combo?gallery-2011.09.14-20-40/build/gallery-colorpicker/assets/gallery-colorpicker-core.css" type="text/css" rel="stylesheet" />
 	<style type="text/css">
 		body {margin: 0;}
 		#queryContainer label { margin: 0; padding: 0; font-size: smaller; }
@@ -56,9 +55,7 @@
 	</style>
 	<script src="http://yui.yahooapis.com/3.4.0/build/yui/yui-min.js"></script>
 	<script type="text/javascript">
-		YUI({
-			gallery: 'gallery-2011.09.14-20-40'
-		}).use('node', 'gallery-colorpicker', 'io-base', 'json-parse', function (Y) {
+		YUI().use('node', 'io-base', 'json-parse', function (Y) {
 
 			function ioComplete(id, o) {
 				jsonData = o.responseText.toString().replace(/<!--.*/, '');
